@@ -1,0 +1,25 @@
+﻿<Window x:Class="EDP_MP1.readMorse"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EDP_MP1"
+        mc:Ignorable="d"
+        Title="readMorse" Height="513" Width="522">
+    <Grid>
+        <TextBox x:Name="textbox_filePath" HorizontalAlignment="Left" Height="23" Margin="68,18,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="322" TextChanged="textbox_filePath_TextChanged"/>
+        <Button x:Name="button_readFile" Content="Read Morse" HorizontalAlignment="Left" Margin="402,18,0,0" VerticalAlignment="Top" IsEnabled="False" Width="85" Click="button_readFile_Click" Height="22"/>
+        <Label Content="File Path:" HorizontalAlignment="Left" Height="26" Margin="10,15,0,0" VerticalAlignment="Top" Width="117"/>
+        <CheckBox x:Name="option_writeMorse" Content="Write Morse" HorizontalAlignment="Left" Margin="10,86,0,0" VerticalAlignment="Top" Click="option_writeMorse_Click"/>
+        <TextBox x:Name="textbox_morseTranslated" HorizontalAlignment="Left" Height="23" Margin="68,48,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="419"/>
+        <Label Content="Output" HorizontalAlignment="Left" Height="26" Margin="10,46,0,0" VerticalAlignment="Top" Width="117"/>
+        <TextBox x:Name="textbox_userFileName" IsEnabled="False" HorizontalAlignment="Left" Height="23" Margin="75,437,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="272" TextChanged="textbox_userFileName_TextChanged"/>
+        <Label Content="File Name: " HorizontalAlignment="Left" Height="26" Margin="10,436,0,0" VerticalAlignment="Top" Width="117"/>
+        <Label Content="Message" HorizontalAlignment="Left" Height="26" Margin="10,124,0,0" VerticalAlignment="Top" Width="117"/>
+        <TextBox x:Name="textbox_userMessage" MaxLength="64" IsEnabled="False" HorizontalAlignment="Left" Height="112" Margin="75,127,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="412" TextChanged="textbox_userMessage_TextChanged"/>
+        <Button x:Name="button_sendMessage" IsEnabled="False" Content="Translate" HorizontalAlignment="Left" Margin="75,252,0,0" VerticalAlignment="Top" Width="161" Click="button_sendMessage_Click" Height="23"/>
+        <TextBox x:Name="textbox_morseCode" IsEnabled="False" HorizontalAlignment="Left" Height="127" Margin="75,293,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="412" TextChanged="textbox_userMessage_TextChanged"/>
+        <Label Content="Morse" HorizontalAlignment="Left" Height="26" Margin="10,293,0,0" VerticalAlignment="Top" Width="117"/>
+        <Button x:Name="button_saveFile" IsEnabled="False" Content="Save File" HorizontalAlignment="Left" Margin="361,437,0,0" VerticalAlignment="Top" Width="126"  Height="23" Click="button_saveFile_Click"/>
+    </Grid>
+</Window>
